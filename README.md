@@ -5,7 +5,7 @@
 
 ---
 
-![ResQAI Banner](assets/media/resqai_hero_banner.png)
+![ResQAI Banner](Asset/banner.png)
 
 ---
 
@@ -187,7 +187,7 @@ This creates transparent AI coordination for responders.
 
 ## ResQAI Hero Banner
 
-![Hero Banner](assets/media/resqai_hero_banner.png)
+![Hero Banner](Asset/banner.png)
 
 ---
 
@@ -212,7 +212,7 @@ Gemma acts as the central multimodal fusion layer, synthesizing fragmented disas
 
 ## Orchestration Flow
 
-![Architecture Diagram](assets/architecture/resqai_architecture.png)
+![Architecture Diagram](Asset/Architecure-diagram.png)
 
 ---
 
@@ -225,7 +225,7 @@ Disaster Inputs
         ResQAI Orchestrator
                 ↓
  ┌───────────────┬───────────────┬───────────────┐
- │ Vision Agent │ Voice Agent  │ Weather Agent │
+ │ Vision Agent  │ Voice Agent   │ Weather Agent │
  └───────────────┴───────────────┴───────────────┘
                 ↓
 RAG + Temporal Memory + Geospatial Intelligence
@@ -245,7 +245,7 @@ ResQAI integrates Grad-CAM explainability to visualize why the flood detection m
 
 | Original Flood Image | Grad-CAM Heatmap |
 |---|---|
-| ![](assets/media/flood_original.png) | ![](assets/media/flood_gradcam.png) |
+| ![Flood Image](Asset/original_flood_image.jpg) | ![Grad:CAM Image](Asset/GRAD:CAM_heatmap.png) |
 
 This improves:
 - trust
@@ -260,7 +260,7 @@ during AI-assisted disaster response.
 
 ## Real-Time Thought Stream
 
-![Streaming Intelligence](assets/media/streaming_reasoning.png)
+![Streaming Intelligence](Asset/Reasoning_streaming.png)
 
 ResQAI streams operational reasoning progressively:
 
@@ -285,7 +285,7 @@ This creates a transparent AI coordination experience for emergency responders.
 
 ResQAI is designed for edge-friendly deployment using local Gemma inference through Ollama.
 
-![Local AI](assets/media/local_ai.png)
+![Local AI](Asset/local_gemma_runtime_trace.png)
 
 ### Key Capabilities
 
