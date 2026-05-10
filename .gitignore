@@ -1,39 +1,46 @@
-.DS_Store
+# Python
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-.Python
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
-.coverage
-coverage.xml
-htmlcov/
-
-# Environments
-.env
-.venv/
 venv/
-ENV/
+.env
 
-# Packaging
-build/
-dist/
-*.egg-info/
+# Mac
+.DS_Store
 
-# Jupyter / notebooks
-.ipynb_checkpoints/
-
-# IDEs
-.vscode/
-.idea/
+# Node
+node_modules/
+.next/
 
 # Logs
 *.log
 
-# Local data / artifacts
-data/
+# Models
+*.pt
+*.pth
+*.ckpt
+*.bin
+
+# Data
+dataset/
 artifacts/
 outputs/
 
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Environment
+.env.local
+
+dataset/
+frontend/node_modules/
+frontend/.next/
+artifacts/
+*.pt
+*.pth
+*.bin
+*.ckpt
