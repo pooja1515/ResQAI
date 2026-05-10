@@ -1,0 +1,145 @@
+{
+  "_debug": {
+    "agents": {
+      "fusion": {
+        "agent": "fusion_coordinator",
+        "attempts": 1,
+        "data": {
+          "crisis_trend": "Escalation",
+          "operational_notes": [
+            "Avoid walking or driving through floodwaters.",
+            "Move to higher ground if possible."
+          ],
+          "overall_risk": "Critical",
+          "reasoning_summary": "Multiple sources confirm severe flooding and trapped individuals, escalating the risk to critical. Immediate rescue operations are mandated due to confirmed distress and high-risk conditions.",
+          "recommended_actions": [
+            "Initiate immediate rescue operations.",
+            "Send emergency medical services (EMS) and rescue teams.",
+            "Contact relevant disaster management authorities."
+          ],
+          "vulnerable_groups": [
+            "Trapped people"
+          ],
+          "weather_escalation": false
+        },
+        "duration_s": 9.405541896820068,
+        "error": null,
+        "ok": true
+      },
+      "memory": {
+        "agent": "memory_agent",
+        "attempts": 1,
+        "data": {
+          "crisis_trend": "Escalation",
+          "distress_trend": "Low/None -> Critical (Trapped people)",
+          "reasoning_summary": "The timeline shows a rapid escalation from general flood warnings (08:10) to confirmed, critical distress reports (11:00) of people trapped in flooded homes. The latest multimodal event confirms severe flooding and mandates immediate rescue operations.",
+          "recommended_priority": "Immediate Rescue",
+          "severity_progression": "Low/Medium -> High (Flooding confirmed)"
+        },
+        "duration_s": 18.309638738632202,
+        "error": null,
+        "ok": true
+      },
+      "rag": {
+        "agent": "rag_agent",
+        "attempts": 1,
+        "data": {
+          "reasoning_summary": "The query indicates a high-urgency situation with people trapped in floodwaters. The context confirms India's high vulnerability to floods and associated risks.",
+          "recommended_actions": [
+            "Seek immediate assistance for stranded people.",
+            "Follow local emergency instructions.",
+            "Contact relevant disaster management authorities."
+          ],
+          "risk_level": "high",
+          "safety_guidelines": [
+            "Avoid walking or driving through floodwaters.",
+            "Stay informed about local weather warnings.",
+            "Move to higher ground if possible."
+          ]
+        },
+        "duration_s": 23.369088888168335,
+        "error": null,
+        "ok": true
+      },
+      "vision": {
+        "agent": "vision_agent",
+        "attempts": 1,
+        "data": {
+          "confidence": 0.9050127267837524,
+          "device": "mps",
+          "explainability": {
+            "confidence": 0.9050127267837524,
+            "heatmap_path": "/Users/pooja/Documents/New project/outputs/explanations/10166_heatmap.png",
+            "metadata_path": "/Users/pooja/Documents/New project/outputs/explanations/10166_metadata.json",
+            "overlay_path": "/Users/pooja/Documents/New project/outputs/explanations/10166_overlay.png",
+            "predicted_class": "flooded"
+          },
+          "image_path": "/Users/pooja/Documents/New project/dataset/image/flood_images/train/Labeled/Flooded/image/10166.jpg",
+          "predicted_class": "flooded",
+          "probabilities": {
+            "flooded": 0.9050127267837524,
+            "non_flooded": 0.09498724341392517
+          }
+        },
+        "duration_s": 1.442389965057373,
+        "error": null,
+        "ok": true
+      },
+      "voice": {
+        "agent": "voice_agent",
+        "attempts": 1,
+        "data": {
+          "distress_level": "critical",
+          "distress_score": 0.05,
+          "language": "hi",
+          "needs": [
+            "Rescue",
+            "Immediate assistance"
+          ],
+          "priority_groups": [
+            "Trapped people"
+          ],
+          "reasoning_summary": "The transcript explicitly states that water has entered the home ('पानी घर में घुस चुका है') and people are trapped ('लोग यहाप पर फसे हुए है'). This combination mandates a CRITICAL distress level and HIGH urgency, requiring immediate rescue efforts.",
+          "recommended_actions": [
+            "Initiate immediate rescue operations.",
+            "Send emergency medical services (EMS) and rescue teams."
+          ],
+          "risk_factors": [
+            "Flooding (Water entered home)",
+            "Trapped people"
+          ],
+          "transcription": "बाद का पानी गर में गुस चुका है तुरन्त मदद चाहिये लोग यहाप पर फसे हुए है",
+          "urgency": "high"
+        },
+        "duration_s": 35.98234176635742,
+        "error": null,
+        "ok": true
+      },
+      "weather": {
+        "agent": "weather_agent",
+        "attempts": 2,
+        "data": null,
+        "duration_s": 43.76591086387634,
+        "error": "Gemma did not return valid weather JSON after retries.",
+        "ok": false
+      }
+    },
+    "request_id": "884b062c-ce66-4bfc-93ca-8bc13b3490b5"
+  },
+  "crisis_trend": "Escalation",
+  "operational_notes": [
+    "Avoid walking or driving through floodwaters.",
+    "Move to higher ground if possible."
+  ],
+  "overall_risk": "Critical",
+  "reasoning_summary": "Multiple sources confirm severe flooding and trapped individuals, escalating the risk to critical. Immediate rescue operations are mandated due to confirmed distress and high-risk conditions.",
+  "recommended_actions": [
+    "Initiate immediate rescue operations.",
+    "Send emergency medical services (EMS) and rescue teams.",
+    "Contact relevant disaster management authorities."
+  ],
+  "vulnerable_groups": [
+    "Trapped people"
+  ],
+  "weather_escalation": false
+}

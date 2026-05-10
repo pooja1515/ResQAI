@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Base Overrides for Streamlit */
+.stApp {
+    background-color: #0b0b10;
+    color: #e0e0e0;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: transparent !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #121218 !important;
+    border-right: 1px solid #202029;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.sidebar-header {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: #6a6a82;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-container {
+    background: linear-gradient(135deg, rgba(255, 75, 75, 0.15) 0%, rgba(18, 18, 24, 1) 100%);
+    border: 1px solid #2d2d3a;
+    border-left: 4px solid #ff4b4b;
+    padding: 3rem;
+    border-radius: 8px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: -webkit-linear-gradient(#ffffff, #b0b0cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: #ff4b4b;
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-text {
+    font-size: 1.05rem;
+    color: #9e9eb4;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+/* Section Header */
+.section-header {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #2d2d3a;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Status Cards */
+.status-card {
+    background-color: #15151c;
+    border: 1px solid #2d2d3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.status-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.status-active::before {
+    background-color: #00e5ff;
+    box-shadow: 0 0 12px #00e5ff;
+}
+
+.status-critical::before {
+    background-color: #ff4b4b;
+    box-shadow: 0 0 12px #ff4b4b;
+}
+
+.status-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    border-color: #4a4a5e;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-status {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #00e5ff;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.status-text-critical {
+    color: #ff4b4b !important;
+    animation: blink 1.5s infinite;
+}
+
+.card-detail {
+    font-size: 0.9rem;
+    color: #7a7a92;
+    line-height: 1.4;
+}
+
+/* Radar Panel */
+.radar-panel {
+    background-color: #121218;
+    border: 1px solid #2d2d3a;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.4);
+    height: 100%;
+}
+
+.radar-header {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #9e9eb4;
+}
+
+.radar-projection {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.highlight-moderate {
+    color: #ffb700;
+    font-weight: 700;
+}
+
+.highlight-critical {
+    color: #ff4b4b;
+    font-weight: 800;
+    text-shadow: 0 0 10px rgba(255, 75, 75, 0.4);
+}
+
+.radar-divider {
+    border: 0;
+    height: 1px;
+    background: #2d2d3a;
+    margin: 1.5rem 0;
+}
+
+.radar-forecast {
+    color: #b0b0cc;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.radar-forecast strong {
+    color: #ffffff;
+}
+
+.radar-forecast ul {
+    margin-top: 0.8rem;
+    padding-left: 1.5rem;
+}
+
+.radar-forecast li {
+    margin-bottom: 0.5rem;
+}
+
+/* Quick Navigation Grid */
+.quick-nav-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.quick-nav-btn {
+    background-color: #181820;
+    border: 1px solid #2d2d3a;
+    border-radius: 6px;
+    padding: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1rem;
+}
+
+.quick-nav-btn:hover {
+    background-color: #202029;
+    border-color: #ff4b4b;
+    transform: translateX(4px);
+    box-shadow: -4px 0 15px rgba(255, 75, 75, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+/* Metrics Overrides */
+[data-testid="stMetricValue"] {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+[data-testid="stMetricDelta"] {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 0.85rem;
+    color: #7a7a92;
+}
+
+/* Checkbox Overrides */
+.stCheckbox label p {
+    color: #b0b0cc;
+    font-size: 0.9rem;
+}
+
+/* Top Padding adjustment for Streamlit */
+.block-container {
+    padding-top: 2rem !important;
+}

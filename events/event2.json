@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-05-09T10:30:00",
+  "event_type": "weather",
+  "severity": "medium",
+  "summary": "Heavy rainfall intensity increasing."
+}

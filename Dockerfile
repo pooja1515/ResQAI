@@ -1,0 +1,17 @@
+# Production image scaffold (no business logic yet).
+# When ready, switch to pinned python base and add build steps (wheel, non-root user, etc.).
+
+FROM python:3.11-slim
+
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY src /app/src
+
+ENV PYTHONPATH=/app/src
+EXPOSE 8000
+
+CMD ["uvicorn", "resqai.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
