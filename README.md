@@ -1,4 +1,4 @@
-#ResQAI  
+# ResQAI  
 ### Multimodal Disaster Intelligence Powered by Gemma
 
 > Transforming fragmented disaster signals into coordinated operational intelligence using multimodal AI orchestration.
